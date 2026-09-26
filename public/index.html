@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festus Asembo | Backend Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Inter and JetBrains Mono (classic developer fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">&lt;FA /&gt;</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="api-status">
+                <span class="dot" id="status-dot"></span>
+                <span id="status-text">API: Checking...</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <p class="greeting">Hi, my name is</p>
+            <h1 class="name">Festus Asembo.</h1>
+            <h2 class="title">I build scalable backend systems.</h2>
+            <p class="description">
+                I am a Backend Engineer specializing in designing robust APIs, optimizing databases, and architecting cloud-native microservices. I focus on performance, security, and clean code.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-terminal">
+            <div class="terminal-header">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+                <span class="terminal-title">bash - backend.sh</span>
+            </div>
+            <div class="terminal-body">
+                <p><span class="prompt">$</span> docker ps</p>
+                <p class="output">CONTAINER ID   IMAGE          STATUS         PORTS</p>
+                <p class="output">a1b2c3d4e5f6   portfolio-api  Up 2 hours     0.0.0.0:3000->3000/tcp</p>
+                <p class="output">f6e5d4c3b2a1   postgres-db    Up 2 hours     5432/tcp</p>
+                <p class="output">c3b2a1f6e5d4   redis-cache    Up 2 hours     6379/tcp</p>
+                <p><span class="prompt">$</span> curl -s http://localhost:3000/api/status</p>
+                <p class="output json">{"status":"online","service":"Portfolio Backend","uptime":7200}</p>
+                <p><span class="prompt">$</span> <span class="cursor">_</span></p>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">01. About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hello! I'm Festus, a backend engineer based in Port Harcourt, Nigeria. My journey in software engineering started with a curiosity for how data moves across the internet, and it has evolved into a passion for building the invisible infrastructure that powers modern applications.</p>
+                <p>I enjoy tackling complex architectural challenges, whether it's reducing database query latency, designing event-driven microservices, or implementing secure authentication flows. I believe that a great backend is one that is invisible to the user because it just works—reliably and efficiently.</p>
+                <p>When I'm not writing code, I'm contributing to open-source projects, writing technical articles, or exploring the latest in cloud computing and AI.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="section-title">02. Technical Arsenal</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><i class="fas fa-terminal"></i> Languages</h3>
+                <ul>
+                    <li>JavaScript (Node.js)</li>
+                    <li>TypeScript</li>
+                    <li>Python</li>
+                    <li>Go</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-server"></i> Frameworks & Libraries</h3>
+                <ul>
+                    <li>Express.js / NestJS</li>
+                    <li>Django / Flask</li>
+                    <li>FastAPI</li>
+                    <li>GraphQL / REST</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-database"></i> Databases & Caching</h3>
+                <ul>
+                    <li>PostgreSQL</li>
+                    <li>MongoDB</li>
+                    <li>Redis</li>
+                    <li>Elasticsearch</li>
+                    <li>Prisma / Mongoose</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-cloud"></i> DevOps & Cloud</h3>
+                <ul>
+                    <li>Docker & Kubernetes</li>
+                    <li>AWS (EC2, S3, RDS)</li>
+                    <li>CI/CD (GitHub Actions)</li>
+                    <li>Nginx</li>
+                    <li>Linux / Bash</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title">03. Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fas fa-folder-open folder-icon"></i>
+                    <div class="project-links">
+                        <a href="https://github.com/asembof-tech" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <h3>Quantum E-Commerce API</h3>
+                <p class="project-desc">A high-throughput, scalable API for a modern e-commerce platform. Handles inventory, orders, and payments with a microservices architecture.</p>
+                <ul class="project-tech">
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>PostgreSQL</li>
+                    <li>Redis</li>
+                    <li>Docker</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fas fa-folder-open folder-icon"></i>
+                    <div class="project-links">
+                        <a href="https://github.com/asembof-tech" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <h3>Neural Analytics Engine</h3>
+                <p class="project-desc">A real-time data processing pipeline and API that ingests millions of events, processes them via Python ML models, and exposes insights via GraphQL.</p>
+                <ul class="project-tech">
+                    <li>Python</li>
+                    <li>FastAPI</li>
+                    <li>GraphQL</li>
+                    <li>MongoDB</li>
+                    <li>Kafka</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fas fa-folder-open folder-icon"></i>
+                    <div class="project-links">
+                        <a href="https://github.com/asembof-tech" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <h3>Synergy Auth Microservice</h3>
+                <p class="project-desc">A centralized authentication and authorization service using JWT and OAuth2, designed to be dropped into any microservices ecosystem.</p>
+                <ul class="project-tech">
+                    <li>Go</li>
+                    <li>JWT</li>
+                    <li>OAuth2</li>
+                    <li>PostgreSQL</li>
+                    <li>Kubernetes</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <h2 class="section-title">04. Get In Touch</h2>
+        <div class="contact-content">
+            <p>I am currently open to new opportunities, freelance projects, or just a good tech conversation. My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+            
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required placeholder="Hello Festus, I'd like to talk about..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit-btn">Send Message</button>
+                <div id="form-status" class="form-status"></div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Designed & Built by Festus Asembo</p>
+        <p class="footer-tech">Powered by Node.js & Express on Render</p>
+    </footer>
+
+   <script src="/script.js"></script>
+</body>
+</html>
