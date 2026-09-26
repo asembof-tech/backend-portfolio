@@ -23,6 +23,16 @@ This project serves as a professional portfolio for a Backend Developer. Unlike 
 - **Tools:** Git, GitHub, Render, Dotenv
 - **Dependencies:** `express`, `cors`, `dotenv`
 
+- **Project Structure**
+- backend-portfolio/
+├── public/
+│   ├── index.html      # Main HTML structure
+│   ├── style.css       # IDE-inspired dark theme styling
+│   └── script.js       # Frontend logic (fetch API, form handling)
+├── .gitignore          # Prevents node_modules from being uploaded
+├── package.json        # Project metadata and scripts
+└── server.js           # Express backend server
+
 ## 💻 Running Locally
 
 To run this project on your own machine, follow these steps:
@@ -31,3 +41,10 @@ To run this project on your own machine, follow these steps:
    ```bash
    git clone https://github.com/asembof-tech/backend-portfolio.git
    cd backend-portfolio
+
+Author
+Festus Asembo
+
+GitHub: @asembof-tech
+
+LinkedIn: https://www.linkedin.com/public-profile/settings/
